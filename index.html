@@ -1,17 +1,245 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/kwibo/">
-  
-  <!-- Meta de verificação do Google Search Console -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lean Apps — Apps leves e úteis (Kwibo e mais)</title>
+  <meta name="description" content="Conheça os apps da Lean Apps — Kwibo (KW Video Downloader) e outros utilitários leves para baixar vídeos (TikTok, Instagram, Pinterest) e acompanhar ganhos do AdMob." />
+   <!-- Meta de verificação do Google Search Console -->
   <meta name="google-site-verification" content="_8cQJayqtFUT2c46at5W4c8ltuQApwZntKkdwPhSNwM" />
-  
-  <title>Redirecionando para Kwibo...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://www.gstatic.com/android/market_images/web/favicon_v3.ico" />
+  <style>
+    :root{
+      --bg:#0b1020; --card:#121933; --muted:#94a3b8; --fg:#e6edf6; --brand:#7c3aed; --brand-2:#22d3ee;
+      --ring: rgba(124,58,237,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif; color:var(--fg); background:
+      radial-gradient(1200px 500px at 10% -20%, rgba(124,58,237,.15), transparent 60%),
+      radial-gradient(900px 400px at 100% 0%, rgba(34,211,238,.12), transparent 60%),
+      var(--bg);
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:1100px; margin:0 auto; padding:24px}
+    header{display:flex; gap:16px; align-items:center; justify-content:space-between; padding:12px 0}
+    .brand{display:flex; align-items:center; gap:14px}
+    .logo{width:44px; height:44px; border-radius:14px; background:linear-gradient(135deg,var(--brand),var(--brand-2)); display:grid; place-items:center; box-shadow:0 10px 30px var(--ring); font-weight:800}
+    .logo span{font-size:20px}
+    h1{font-size:clamp(22px, 2.5vw, 34px); margin:0}
+    .devlink{font-weight:600; opacity:.9}
+    .cta-play{display:inline-flex; align-items:center; gap:10px; background:linear-gradient(90deg,var(--brand),var(--brand-2)); color:#091021; padding:12px 16px; border-radius:14px; font-weight:700; box-shadow:0 10px 30px var(--ring)}
+    .cta-play svg{width:18px; height:18px}
+
+    .hero{margin-top:18px; padding:22px; border:1px solid rgba(148,163,184,.18); border-radius:18px; background:linear-gradient(180deg, rgba(255,255,255,.02), transparent 60%)}
+    .hero p{margin:10px 0 0; color:var(--muted); max-width:800px}
+
+    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:22px}
+    .card{position:relative; border:1px solid rgba(148,163,184,.18); background:rgba(10,14,30,.7); border-radius:18px; padding:16px; transition:.25s transform,.25s box-shadow,.25s border-color}
+    .card:hover{transform:translateY(-2px); border-color:rgba(124,58,237,.4); box-shadow:0 12px 30px -12px var(--ring)}
+    .app-head{display:flex; gap:12px; align-items:center}
+    .icon{width:56px; height:56px; border-radius:14px; background:#0d1328; display:grid; place-items:center; font-weight:800}
+    .title{font-size:17px; font-weight:700; line-height:1.2}
+    .subtitle{font-size:13px; color:var(--muted); margin-top:2px}
+    .desc{margin:10px 0 12px; color:#c7d2fe; font-size:14px; line-height:1.55}
+    .badges{display:flex; gap:8px; flex-wrap:wrap}
+    .badge{font-size:12px; color:#cbd5e1; background:rgba(148,163,184,.14); border:1px solid rgba(148,163,184,.22); padding:6px 8px; border-radius:999px}
+    .actions{display:flex; gap:8px; margin-top:12px}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 12px; border-radius:12px; border:1px solid rgba(148,163,184,.25); background:#0e1531; color:#e2e8f0; font-weight:600}
+    .btn:hover{border-color:rgba(124,58,237,.5)}
+    .btn.play{background:linear-gradient(90deg,var(--brand),var(--brand-2)); color:#081022; border-color:transparent}
+    footer{opacity:.8; color:var(--muted); text-align:center; margin:28px 0 10px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lean Apps",
+    "url": "https://krmichael.github.io/",
+    "sameAs": [
+      "https://play.google.com/store/apps/dev?id=4741861730913815865"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <p>Você está sendo redirecionado para o <strong>Kwibo</strong>.<br>
-     Se não for redirecionado automaticamente, <a href="/kwibo/">clique aqui</a>.</p>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"><span>LA</span></div>
+        <div>
+          <h1>Lean Apps <span class="subtitle">— apps de qualidade com baixo consumo de rede</span></h1>
+          <a class="devlink" href="https://play.google.com/store/apps/dev?id=4741861730913815865" target="_blank" rel="noopener">Ver todos no Google Play →</a>
+        </div>
+      </div>
+      <a class="cta-play" href="https://play.google.com/store/apps/dev?id=4741861730913815865" target="_blank" rel="noopener" aria-label="Abrir a página do desenvolvedor da Lean Apps no Google Play">
+        <!-- play icon -->
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <span>Baixar no Google Play</span>
+      </a>
+    </header>
+
+    <section class="hero">
+      <h2 style="margin:0 0 6px 0">Apps leves que resolvem</h2>
+      <p>Conheça nossos aplicativos oficiais: Kwibo para baixar vídeos do Kwai sem marca d’água, utilitários para TikTok e Instagram, downloader para Pinterest e um painel para acompanhar seus ganhos com anúncios. Tudo focado em rapidez, simplicidade e qualidade.</p>
+    </section>
+
+    <section class="grid" aria-label="Lista de aplicativos">
+      <!-- Kwibo / KW Video Downloader -->
+      <article class="card">
+        <div class="app-head">
+          <div class="icon">KW</div>
+          <div>
+            <div class="title">Baixar Videos do Kwai — Kwibo</div>
+            <div class="subtitle">Baixe vídeos do Kwai sem marca d’água</div>
+          </div>
+        </div>
+        <p class="desc">Copie o link no Kwai e o Kwibo inicia o download automaticamente. Suporta múltiplos downloads, modo offline e compartilhamento rápido — simples, rápido e gratuito.</p>
+        <div class="badges">
+          <span class="badge">Kwai</span>
+          <span class="badge">Sem marca d’água</span>
+          <span class="badge">Modo offline</span>
+        </div>
+        <div class="actions">
+          <a class="btn play" href="https://play.google.com/store/apps/details?id=com.kwai.video.downloader.nowatermark" target="_blank" rel="noopener">Ver no Google Play</a>
+          <a class="btn play" href="/kwibo/">Site</a>
+        </div>
+      </article>
+
+      <!-- TikSaver -->
+      <article class="card">
+        <div class="app-head">
+          <div class="icon">TT</div>
+          <div>
+            <div class="title">TikSaver — Watermark Remover</div>
+            <div class="subtitle">Baixe vídeos do TikTok sem marca d’água</div>
+          </div>
+        </div>
+        <p class="desc">Use “Compartilhar link” ou “Copiar link” no TikTok para salvar vídeos e áudios, inclusive em HD, para ver offline. Rápido, leve e sem necessidade de login.</p>
+        <div class="badges">
+          <span class="badge">TikTok</span>
+          <span class="badge">Áudio + Vídeo</span>
+          <span class="badge">Sem login</span>
+        </div>
+        <div class="actions">
+          <a class="btn play" href="https://play.google.com/store/apps/details?id=com.tiksaver.download.nowatermark" target="_blank" rel="noopener">Ver no Google Play</a>
+        </div>
+      </article>
+
+      <!-- SnapTik -->
+      <article class="card">
+        <div class="app-head">
+          <div class="icon">ST</div>
+          <div>
+            <div class="title">SnapTik — Watermark Remover</div>
+            <div class="subtitle">Downloader de vídeos do TikTok em HD</div>
+          </div>
+        </div>
+        <p class="desc">Salve vídeos e áudios do TikTok sem marca d’água em poucos toques. Pré-visualize, compartilhe direto ou repost sem precisar salvar no aparelho.</p>
+        <div class="badges">
+          <span class="badge">TikTok</span>
+          <span class="badge">HD</span>
+          <span class="badge">Pré‑visualização</span>
+        </div>
+        <div class="actions">
+          <a class="btn play" href="https://play.google.com/store/apps/details?id=tt.video.downloader.nowatermark" target="_blank" rel="noopener">Ver no Google Play</a>
+        </div>
+      </article>
+
+      <!-- Video Downloader: Story Saver (Instagram) -->
+      <article class="card">
+        <div class="app-head">
+          <div class="icon">IG</div>
+          <div>
+            <div class="title">Video Downloader — Story Saver</div>
+            <div class="subtitle">Baixe Reels e Stories do Instagram</div>
+          </div>
+        </div>
+        <p class="desc">InSaver Lite permite baixar vídeos do Instagram sem login e salvar Stories e Highlights em segundos. Compartilhe e repost com facilidade.</p>
+        <div class="badges">
+          <span class="badge">Instagram</span>
+          <span class="badge">Reels & Stories</span>
+          <span class="badge">Sem login</span>
+        </div>
+        <div class="actions">
+          <a class="btn play" href="https://play.google.com/store/apps/details?id=com.insta.video.downloader.story.saver.ig" target="_blank" rel="noopener">Ver no Google Play</a>
+        </div>
+      </article>
+
+      <!-- Pin Video Downloader (Pinterest) -->
+      <article class="card">
+        <div class="app-head">
+          <div class="icon">Pin</div>
+          <div>
+            <div class="title">Pin Video Downloader</div>
+            <div class="subtitle">Baixe vídeos, GIFs e fotos do Pinterest</div>
+          </div>
+        </div>
+        <p class="desc">Cole ou compartilhe o link e faça download automático sem marca d’água. Itens salvos ficam acessíveis na lista de downloads para ver offline quando quiser.</p>
+        <div class="badges">
+          <span class="badge">Pinterest</span>
+          <span class="badge">Vídeo + GIF + Foto</span>
+          <span class="badge">Sem marca d’água</span>
+        </div>
+        <div class="actions">
+          <a class="btn play" href="https://play.google.com/store/apps/details?id=com.pinterest.video.downloader.pinvideodownloader" target="_blank" rel="noopener">Ver no Google Play</a>
+        </div>
+      </article>
+
+      <!-- Tik Downloader No Watermark (opção alternativa para TT) -->
+      <article class="card">
+        <div class="app-head">
+          <div class="icon">TD</div>
+          <div>
+            <div class="title">Tik Downloader — No Watermark</div>
+            <div class="subtitle">Outra opção para baixar do TikTok</div>
+          </div>
+        </div>
+        <p class="desc">Aplicativo focado em baixar vídeos e áudios do TikTok sem marca d’água via “Compartilhar link” ou “Copiar link”, com reprodução offline e repost fácil.</p>
+        <div class="badges">
+          <span class="badge">TikTok</span>
+          <span class="badge">Áudio + Vídeo</span>
+          <span class="badge">Rápido & leve</span>
+        </div>
+        <div class="actions">
+          <a class="btn play" href="https://play.google.com/store/apps/details?id=com.tikdownloader" target="_blank" rel="noopener">Ver no Google Play</a>
+        </div>
+      </article>
+
+      <!-- Dashly: AdMobile Earnings Dash -->
+      <article class="card">
+        <div class="app-head">
+          <div class="icon">AD</div>
+          <div>
+            <div class="title">Dashly — AdMob Dashboard</div>
+            <div class="subtitle">Acompanhe ganhos e métricas de anúncios com a admob dashboard</div>
+          </div>
+        </div>
+        <p class="desc">Painel para criadores de apps verem ganhos, impressões, eCPM e solicitações de anúncios por período. Relatórios mensais com navegação por meses/anos e visão diária detalhada.</p>
+        <div class="badges">
+          <span class="badge">AdMob/Ads</span>
+          <span class="badge">Relatórios</span>
+          <span class="badge">Em tempo real</span>
+        </div>
+        <div class="actions">
+          <a class="btn play" href="https://play.google.com/store/apps/details?id=com.admobile.dashboard" target="_blank" rel="noopener">Ver no Google Play</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Lean Apps. Este site serve como vitrine para nossos apps publicados no Google Play.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
 
