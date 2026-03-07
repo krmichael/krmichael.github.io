@@ -27,4 +27,4 @@ Instale agora e comece a baixar vídeo do Kwai sem marca d'água em poucos segun
 * KW Video Downloader
 * Video Downloader for Kwai
 * App Simples de Usar, com apenas 2 etapas, você pode fazer download rápido e salvar vídeos Kwai sem marca d'água.
-  Não é necessidade de fazer login, apenas copie ou compartilhe o link do vídeo com o App e o download será iniciado automaticamente.
+  Não é necessidade fazer login, apenas copie ou compartilhe o link do vídeo com o App e o video será baixado automaticamente.
